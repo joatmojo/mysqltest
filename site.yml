@@ -1,0 +1,14 @@
+---
+
+- hosts: mysql-single
+
+  sudo: yes
+
+  vars:
+    - db_name: mojo
+    - db_user: mojo_user
+    - db_password: mojo_pass
+
+  roles:
+    - update
+    - mysql
